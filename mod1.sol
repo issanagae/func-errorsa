@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract StandardToken is ERC20 {
     address public owner;
 
+
     constructor(string memory name, string memory symbol) ERC20(name, symbol) {
         owner = msg.sender;
     }
